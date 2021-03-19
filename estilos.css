@@ -97,6 +97,11 @@ body {
     transform: rotateY(180deg);
 }
 
+.card__side--back.js-show {
+    transform: rotateY(0);
+    border: solid 2px rgba(245, 245, 245, 0.678);
+}
+
 .card:hover .card__side--back {
     transform: rotateY(0);
     border: solid 2px rgba(245, 245, 245, 0.678);
@@ -152,7 +157,7 @@ body {
     color: #fff;
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
 }
@@ -167,6 +172,8 @@ body {
 }
 
 .card__heading-button {
+    position: relative;
+    z-index: 9999;
     display: block;
     float: right;
     margin: 0.5em 1em 0 0;
